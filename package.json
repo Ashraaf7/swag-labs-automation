@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf allure-results",
     "runTests": "npx playwright test",
-    "allure:generate": " allure generate ./allure-results -o ./allure-reports --single-file --clean & npm run clean",
+    "allure:generate": " allure generate ./allure-results -o ./allure-reports --single-file --clean && npm run clean",
     "allure:open": " allure open allure-reports"
   },
   "keywords": [],
