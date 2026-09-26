@@ -1,0 +1,21 @@
+{
+  "name": "swag-labs-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "clean": "rm -rf ./allure-results ./allure-reports",
+    "runTests": "npx playwright test",
+    "allure:generate": "npx allure generate ./allure-results -o ./allure-reports ",
+    "allure:open": "npx allure open allure-reports & npm run clean"
+  },
+  "keywords": [],
+  "author": "", 
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "allure-playwright": "^3.12.2"
+  }
+}
